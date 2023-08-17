@@ -5,7 +5,7 @@
         <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
     </listeners>
     <test verbose="2" preserve-order="true"
-          name="/home/knoldus/Documents/Github-Action/src/test/java/testcase/Test.java">
+          name="stepdefinitions/myStepdefs.java">
         <classes>
             <class name="stepdefinitions.myStepdefs"></class>
         </classes>
