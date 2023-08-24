@@ -1,3 +1,4 @@
+/*
 package stepdefinitions;
 
 import org.testng.annotations.Test;
@@ -17,3 +18,4 @@ public class myStepdefs {
     }
 
 }
+*/

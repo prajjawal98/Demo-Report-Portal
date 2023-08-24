@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+<!--        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />-->
     </listeners>
     <test verbose="2" preserve-order="true"
           name="stepdefinitions/myStepdefs.java">
