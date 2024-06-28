@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         //path of feature file
         plugin = {"pretty", "com.epam.reportportal.cucumber.ScenarioReporter"},
-        features = {"/home/knoldus/Documents/Demo-Report-Portal/src/test/resources/test.feature"}
+        features = {"src/test/resources/test.feature"}
 )
 public class TestRunner {
 

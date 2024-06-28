@@ -9,10 +9,15 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <cucumber.version>7.13.0</cucumber.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cucumber.version>7.13.0</cucumber.version>
+        <maven.install.plugin.version>3.1.0</maven.install.plugin.version>
+        <maven.clean.plugin.version>3.2.0</maven.clean.plugin.version>
+        <maven.junit.jupiter.version>5.9.2</maven.junit.jupiter.version>
+        <maven.compiler.version>3.10.1</maven.compiler.version>
+<!--        <rp.attributes>$tag</rp.attributes>-->
 
     </properties>
 
@@ -47,42 +52,19 @@
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>
         </dependency>
-
-
-
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
 
 
     </dependencies>
-
-    <build>
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                &lt;!&ndash; The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,-->
-<!--                visit https://github.com/groovy/GMavenPlus/wiki &ndash;&gt;-->
-<!--                <groupId>org.codehaus.gmavenplus</groupId>-->
-<!--                <artifactId>gmavenplus-plugin</artifactId>-->
-<!--                <version>1.13.1</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>compileTests</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>compile</goal>-->
-<!--                            <goal>testCompile</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-    </build>
-
 </project>
