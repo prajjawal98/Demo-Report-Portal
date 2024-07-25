@@ -30,3 +30,11 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: selenium-test-results
+          path: |
+            target/surefire-reports/
+            path/to/logs/
+            path/to/screenshots/  
