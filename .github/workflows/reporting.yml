@@ -35,4 +35,4 @@ jobs:
         with:
           name: Selenium-test-reports
           if: always()
-          path: Magneto/target
+          path: target
